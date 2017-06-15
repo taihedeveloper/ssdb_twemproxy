@@ -1,0 +1,13 @@
+alpha:
+  listen: 0.0.0.0:33332
+  hash: fnv1a_64
+  distribution: ketama
+  auto_eject_hosts: true
+  protocol: ssdb
+  preconnect: true
+  server_retry_timeout: 5000
+  server_failure_limit: 1
+  servers:
+   - 192.168.3.128:8303:1
+  writeservers:
+   - 192.168.3.128:8302:1
