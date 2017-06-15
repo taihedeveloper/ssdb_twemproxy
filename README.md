@@ -3,10 +3,10 @@
    - 本次修改并没有改动twemproxy对于redis和memcache的支持,所以对于redis和memcache并不支持读写分离
 
 # 使用方法
-  必须用gcc4.4.7以上版本编译
-  autoreconf -fvi
-  ./configure
-  make
+  - 必须用gcc4.4.7以上版本编译
+  - autoreconf -fvi
+  - ./configure
+  - make
 
 # 配置文件说明:
 ## 示例
