@@ -3,7 +3,7 @@
    - 本次修改并没有改动twemproxy对于redis和memcache的支持,所以对于redis和memcache并不支持读写分离
 
 # 配置文件说明:
-##示例
+## 示例
   alpha:
   listen: 0.0.0.0:22121
   hash: fnv1a_64
@@ -20,14 +20,14 @@
    - 192.168.217.11:8889:1
    - 192.168.217.11:8888:1
 
-##备注
+## 备注
   servers和writeservers的行数必须一样，不然会启动失败;
   所有的分片权重以servers下的每个分片的第一台为准
 
 
-＃说明：本服务基于开源twemproxy修改，增加了对ssdb命令的支持，感谢原项目的开发团队成员！
+# 说明：本服务基于开源twemproxy修改，增加了对ssdb命令的支持，感谢原项目的开发团队成员！
 
-感谢：
+#感谢：
 # twemproxy (nutcracker) [![Build Status](https://secure.travis-ci.org/twitter/twemproxy.png)](http://travis-ci.org/twitter/twemproxy)
 
 **twemproxy** (pronounced "two-em-proxy"), aka **nutcracker** is a fast and lightweight proxy for [memcached](http://www.memcached.org/) and [redis](http://redis.io/) protocol. It was built primarily to reduce the number of connections to the caching servers on the backend. This, together with protocol pipelining and sharding enables you to horizontally scale your distributed caching architecture.
